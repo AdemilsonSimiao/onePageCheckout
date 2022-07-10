@@ -1,0 +1,185 @@
+CRITICAL - 2022-07-10 11:07:55 --> Undefined variable $titulo
+in APPPATH\Views\templates\header.php on line 11.
+ 1 APPPATH\Views\templates\header.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'APPPATH\\Views\\templates\\header.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\templates\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('templates/header', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('templates/header')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-10 11:08:45 --> Undefined variable $title
+in APPPATH\Views\templates\header.php on line 11.
+ 1 APPPATH\Views\templates\header.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\templates\\header.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\templates\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('templates/header', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('templates/header')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-10 11:11:00 --> Undefined variable $title
+in APPPATH\Views\templates\header.php on line 11.
+ 1 APPPATH\Views\templates\header.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\templates\\header.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\templates\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('templates/header', [], true)
+ 5 APPPATH\Controllers\Home.php(17): view('templates/header')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->pagamento()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-07-10 15:04:47 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: NO)
+CRITICAL - 2022-07-10 15:04:47 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabela` (`nome`) VALUES (:nome:)', [...], false)
+ 3 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\Home.php(21): CodeIgniter\Model->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->pagamento()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-07-10 15:05:49 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-07-10 15:05:49 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabela` (`nome`) VALUES (:nome:)', [...], false)
+ 3 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\Home.php(21): CodeIgniter\Model->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->pagamento()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-07-10 15:05:52 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-07-10 15:05:52 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tabela` (`nome`) VALUES (:nome:)', [...], false)
+ 3 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\Home.php(21): CodeIgniter\Model->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->pagamento()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-07-10 15:08:20 --> Column 'nome' cannot be null
+ERROR - 2022-07-10 15:14:51 --> Column 'nome' cannot be null
+ERROR - 2022-07-10 15:26:47 --> Column 'nome' cannot be null
+ERROR - 2022-07-10 15:32:46 --> Column 'nome' cannot be null
+ERROR - 2022-07-10 15:33:10 --> Column 'nome' cannot be null
+ERROR - 2022-07-10 15:34:29 --> Column 'nome' cannot be null
+ERROR - 2022-07-10 15:34:54 --> Column 'nome' cannot be null
+CRITICAL - 2022-07-10 15:37:13 --> Invalid file: pages/welcome_message.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/welcome_message.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/welcome_message', [], true)
+ 3 APPPATH\Controllers\Home.php(11): view('pages/welcome_message')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-10 15:37:38 --> Invalid file: pages/welcome_message.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/welcome_message.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/welcome_message', [], true)
+ 3 APPPATH\Controllers\Home.php(11): view('pages/welcome_message')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-10 15:53:49 --> custom is not a valid database connection group.
+in SYSTEMPATH\Database\Config.php on line 65.
+ 1 SYSTEMPATH\Common.php(344): CodeIgniter\Database\Config::connect('custom', true)
+ 2 APPPATH\Controllers\Home.php(21): db_connect('custom')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->pagamento()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-10 15:53:59 --> custom is not a valid database connection group.
+in SYSTEMPATH\Database\Config.php on line 65.
+ 1 SYSTEMPATH\Common.php(344): CodeIgniter\Database\Config::connect('custom', true)
+ 2 APPPATH\Controllers\Home.php(21): db_connect('custom')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->pagamento()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-10 15:54:24 --> custom is not a valid database connection group.
+in SYSTEMPATH\Database\Config.php on line 65.
+ 1 SYSTEMPATH\Common.php(344): CodeIgniter\Database\Config::connect('custom', true)
+ 2 APPPATH\Controllers\Home.php(21): db_connect('custom')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->pagamento()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-10 16:21:40 --> onebd is not a valid database connection group.
+in SYSTEMPATH\Database\Config.php on line 65.
+ 1 SYSTEMPATH\Common.php(344): CodeIgniter\Database\Config::connect('onebd', true)
+ 2 APPPATH\Controllers\Home.php(21): db_connect('onebd')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->pagamento()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-10 16:21:42 --> onebd is not a valid database connection group.
+in SYSTEMPATH\Database\Config.php on line 65.
+ 1 SYSTEMPATH\Common.php(344): CodeIgniter\Database\Config::connect('onebd', true)
+ 2 APPPATH\Controllers\Home.php(21): db_connect('onebd')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->pagamento()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-10 16:25:43 --> onebd is not a valid database connection group.
+in SYSTEMPATH\Database\Config.php on line 65.
+ 1 SYSTEMPATH\Common.php(344): CodeIgniter\Database\Config::connect('onebd', true)
+ 2 APPPATH\Controllers\Home.php(21): db_connect('onebd')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->pagamento()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-10 16:26:21 --> CodeIgniter\Database\Database::load(): Argument #1 ($params) must be of type array, Config\Database given, called in C:\xampp\htdocs\onePageCheckout\system\Database\Config.php on line 78
+in SYSTEMPATH\Database\Database.php on line 42.
+ 1 SYSTEMPATH\Database\Config.php(78): CodeIgniter\Database\Database->load(Object(Config\Database), 'custom-')
+ 2 SYSTEMPATH\Common.php(344): CodeIgniter\Database\Config::connect('custom-', true)
+ 3 APPPATH\Controllers\Home.php(21): db_connect('custom-')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->pagamento()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-10 16:36:32 --> CodeIgniter\Database\Database::load(): Argument #1 ($params) must be of type array, Config\Database given, called in C:\xampp\htdocs\onePageCheckout\system\Database\Config.php on line 78
+in SYSTEMPATH\Database\Database.php on line 42.
+ 1 SYSTEMPATH\Database\Config.php(78): CodeIgniter\Database\Database->load(Object(Config\Database), 'custom-')
+ 2 SYSTEMPATH\Common.php(344): CodeIgniter\Database\Config::connect('custom-', true)
+ 3 APPPATH\Controllers\Home.php(21): db_connect('custom-')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->pagamento()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-10 16:41:16 --> CodeIgniter\Database\Database::load(): Argument #1 ($params) must be of type array, Config\Database given, called in C:\xampp\htdocs\onePageCheckout\system\Database\Config.php on line 78
+in SYSTEMPATH\Database\Database.php on line 42.
+ 1 SYSTEMPATH\Database\Config.php(78): CodeIgniter\Database\Database->load(Object(Config\Database), 'custom-')
+ 2 SYSTEMPATH\Common.php(344): CodeIgniter\Database\Config::connect('custom-', true)
+ 3 APPPATH\Controllers\Home.php(21): db_connect('custom-')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->pagamento()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-10 16:41:48 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 1576.
+ 1 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(null, 'insert')
+ 3 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert(null, true)
+ 4 APPPATH\Controllers\Home.php(30): CodeIgniter\Model->insert()
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->pagamento()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
