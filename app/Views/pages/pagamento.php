@@ -1,6 +1,8 @@
+<!--Pagina de pagamento com cartão de credito-->
 <h1 class="produtos">CARTÃO DE CREDITO</h1>
 <section class="rectangle-2" id="cartao">
     
+    <!--Formulario para preenchimento dos dados do cliente com envio para o banco de dados-->
     <form action="" method="get" id="form">
         <input type="hidden" name="id" id="id-atualizar" value="">
         <div class="nome numero_cartao">
@@ -17,28 +19,32 @@
         </div>
     </form>
     
-    <div class="numero_cartao">
-        <label for="">Número do cartão:</label>
-        <input type="text" name="numeroCartao" id="numero_cartao" placeholder="____-____-____-____">
-    </div>
-
-    <div class="nome_cartao">
-        <label for="">Nome do titular:</label>
-        <input type="text" name="nomeCartao" id="nome_cartao" placeholder="Como no cartão">
-    </div>
-
-    <div class="validade_cartao">
-        <div>
-            <label for="">Validade (mês/ano):</label>
-            <input type="text" name="validade" id="validade" placeholder="__/__">
+    <!--Formulario para compra no cartão de credito-->
+    <form action="" method="post">
+        <div class="numero_cartao">
+            <label for="">Número do cartão:</label>
+            <input type="text" name="numeroCartao" id="numero_cartao" placeholder="____-____-____-____">
         </div>
-        <div>
-            <label for="">CVV:</label>
-            <input type="text" placeholder="___">
+
+        <div class="nome_cartao">
+            <label for="">Nome do titular:</label>
+            <input type="text" name="nomeCartao" id="nome_cartao" placeholder="Como no cartão">
         </div>
-    </div>
+
+        <div class="validade_cartao">
+            <div>
+                <label for="">Validade (mês/ano):</label>
+                <input type="text" name="validade" id="validade" placeholder="__/__">
+            </div>
+            <div>
+                <label for="">CVV:</label>
+                <input type="text" placeholder="___">
+            </div>
+        </div>
+    </form>
 </section>
 
+<!--Dados de valores de frete, descontos e valor total-->
 <div class="container_caixa">
     <div class="produtos_caixa">
         <p class="caixa">PRODUTOS</p>
@@ -58,4 +64,5 @@
     </div>
 </div>
 
+<!--Botão de finalização de pedido com função de confirmação e envia para tela de comprovação de pagamento-->
 <button  type="submit" id="btn" onclick="fPedido()">FINALIZAR O PEDIDO</button>
